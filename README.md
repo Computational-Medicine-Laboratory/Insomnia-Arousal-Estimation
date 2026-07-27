@@ -4,7 +4,11 @@ This code is written by Tianyu Hwang in affiliation with Computational Medicine 
 
 Please refer to the following paper if you use any part of the code:
 
-Hwang, Tian Yu. Statistical Signal Processing of Skin Conductance for Biomarker Discovery in Insomnia Disorder.
+[1] Hwang et al. Disrupted fear regulation in insomnia disorder revealed by arousal estimation from skin conductance.
+
+## Dataset
+
+The dataset (`dataset.csv`) used in this repository is provided as Supporting Information (S1 Data) in the paper [1]. It contains preprocessed signals sampled at 4 Hz in long format.
 
 ## Installation
 
