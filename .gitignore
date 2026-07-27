@@ -1,0 +1,9 @@
+# Data files
+results/
+dataset.csv
+
+# Python cache
+*.pyc
+
+# Ignore MACOS files
+.DS_Store
