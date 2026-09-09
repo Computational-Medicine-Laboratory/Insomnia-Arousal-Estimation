@@ -9,9 +9,9 @@ from scipy.io import loadmat
 from scipy.stats import norm, ranksums, wilcoxon
 from statsmodels.stats.multitest import multipletests
 
-plt.rcParams["text.usetex"] = True
-plt.rcParams["font.family"] = "serif"
-plt.rcParams["font.serif"] = ["cm"]
+# plt.rcParams["text.usetex"] = True
+# plt.rcParams["font.family"] = "serif"
+# plt.rcParams["font.serif"] = ["cm"]
 plt.rcParams["font.size"] = 12
 
 

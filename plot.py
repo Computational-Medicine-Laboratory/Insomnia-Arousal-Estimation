@@ -6,9 +6,9 @@ import pandas as pd
 from scipy.io import loadmat
 from scipy.stats import norm
 
-plt.rcParams["text.usetex"] = True
-plt.rcParams["font.family"] = "serif"
-plt.rcParams["font.serif"] = ["cm"]
+# plt.rcParams["text.usetex"] = True
+# plt.rcParams["font.family"] = "serif"
+# plt.rcParams["font.serif"] = ["cm"]
 plt.rcParams["font.size"] = 12
 
 
