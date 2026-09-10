@@ -12,8 +12,8 @@ class MPPDecoder:
         self.newton_atol = newton_atol
 
     def __call__(self, x0: float, vx: float, r: np.ndarray, r0: float, r1: float, vr: float):
-        # Fixed parameters for MPP occurance
-        b0, b1 = self.get_mpp_occurance_parameters(r)
+        # Fixed parameters for MPP occurrence
+        b0, b1 = self.get_mpp_occurrence_parameters(r)
 
         # Expectation-Maximization (EM) algorithm
         vx_prev, r0_prev, r1_prev, vr_prev = vx, r0, r1, vr
@@ -67,8 +67,8 @@ class MPPDecoder:
         }
         return results
 
-    def get_mpp_occurance_parameters(self, r):
-        p0 = np.sum(r > 0) / len(r)  # Baseline probability of MPP occurance
+    def get_mpp_occurrence_parameters(self, r):
+        p0 = np.sum(r > 0) / len(r)  # Baseline probability of MPP occurrence
         b0 = np.log(p0 / (1 - p0))  # Intercept of logistic function
         b1 = 1  # Rate of logistic function
         return b0, b1
@@ -198,8 +198,8 @@ class MPPContDecoder(MPPDecoder):
         s_lambda: float = 1,
         vs_stop: float = 0,
     ):
-        # Fixed parameters for MPP occurance
-        b0, b1 = self.get_mpp_occurance_parameters(r)
+        # Fixed parameters for MPP occurrence
+        b0, b1 = self.get_mpp_occurrence_parameters(r)
 
         # Expectation-Maximization (EM) algorithm
         vx_prev, r0_prev, r1_prev, vr_prev, s0_prev, s1_prev, vs_prev = vx, r0, r1, vr, s0, s1, vs
